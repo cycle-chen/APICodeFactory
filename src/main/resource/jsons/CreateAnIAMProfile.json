@@ -1,0 +1,12 @@
+{
+    "CreateAnIAMProfile": {
+        "success": {
+            "status": "200",
+            "userId": ""
+        },
+        "iam_provisioning_iam_profile_already_exists": {
+            "status": "400",
+            "error_code": "iam_provisioning_iam_profile_already_exists"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+${package}
+/**
+ * Created by ${authors} on ${createDate}.
+ */
+public class ${className} {
+	${classBody}
+}
