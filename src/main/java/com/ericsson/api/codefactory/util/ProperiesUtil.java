@@ -2,7 +2,9 @@ package com.ericsson.api.codefactory.util;
 
 import java.io.IOException;
 import java.util.Properties;
-
+/**
+ * Created by yaochong.chen.
+ */
 public class ProperiesUtil {
 	
 	private static final String DEFAULT_LOCATION = "config.properties";

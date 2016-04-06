@@ -3,5 +3,8 @@ ${package}
  * Created by ${authors} on ${createDate}.
  */
 public class ${className} {
-	${classBody}
+#foreach($methodName in ${list})
+	public void $methodName(){
+	};
+#end
 }
