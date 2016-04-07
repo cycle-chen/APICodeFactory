@@ -1,10 +1,39 @@
-${package}
+package ${package};
+
+#foreach($import in $importList)
+import $import;
+#end
+
 /**
  * Created by ${authors} on ${createDate}.
  */
 public class ${className} {
-#foreach($methodName in ${list})
+    private final static String URL = "${url}";
+    
+#foreach($methodName in $subMap.keySet())
+#set($paramMap = $!subMap.get($methodName))
+#if($methodName == "success")
+    @Test
 	public void $methodName(){
-	};
+	   post(URL, "$methodName").then().log().all().statusCode($!paramMap.get("status"));
+	}
+	
+#else
+    @Test
+    public void $methodName(){
+       post(URL, "$methodName").then().log().all().statusCode($!paramMap.get("status")).body("error",equalTo("$!paramMap.get("error_code")"));
+    }
+    
 #end
+#end
+    @BeforeClass
+    public void init(){
+    
+    }
+    
+    @AfterClass
+    public void clean(){
+    
+    }
+    
 }

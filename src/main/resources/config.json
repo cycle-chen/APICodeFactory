@@ -1,0 +1,19 @@
+{
+	"config":{
+	    "authors":"yaochong.chen",
+	    "packages":"com.ericsson.nsi.iam.v2.pv.ft",
+	    "createDate":"2016-10-11",
+	    "importList":[
+	          "com.ericsson.nsi.iam.v2.test.aa.JdbcTool",
+	          "org.junit.AfterClass",
+	          "org.junit.BeforeClass",
+	          "static com.ericsson.nsi.iam.v2.test.common.utils.MessageUtil.parseJsonForSql," ,
+	          "static com.ericsson.nsi.iam.v2.test.common.utils.MessageUtil.parseJsonForString",
+	          "static org.junit.Assert.assertEquals",
+	          "static com.ericsson.nsi.iam.v2.aa.ft.AARestTool.*",
+	          "static com.ericsson.nsi.iam.v2.test.aa.JdbcTool.*",
+	          "static org.hamcrest.Matchers.equalTo",
+	          "static org.hamcrest.Matchers.notNullValue"
+        ]
+	}
+}

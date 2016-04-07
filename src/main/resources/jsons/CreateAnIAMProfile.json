@@ -1,3 +1,41 @@
 {
-    "CreateAnIAMProfile": ["success","iam_provisioning_iam_profile_already_exists"]
+    "CreateAnIAMProfile": {
+    	"url":"iam_provisioning/v1/iam_profile",
+        "success": {
+            "status": "200",
+            "userId": "U-xxx-xxxx-xxx-xxxx"
+        },
+        "iam_provisioning_iam_profile_already_exists": {
+            "status": "400",
+            "error_code": "iam_provisioning_iam_profile_already_exists"
+        },
+        "iam_provisioning_invalid_request":{
+        	"status":"400",
+        	"error_code":"iam_provisioning_invalid_request"
+        },
+        "iam_provisioning_unauthorized_client":{
+        	"status":"401",
+        	"error_code":"iam_provisioning_unauthorized_client"
+        },
+        "iam_provisioning_internal_error":{
+        	"status":"500",
+        	"error_code":"iam_provisioning_internal_error"
+        },
+        "iam_provisioning_max_load_reached":{
+        	"status":"503",
+        	"error_code":"iam_provisioning_max_load_reached"
+        },
+        "iam_provisioning_DB_connection_issue":{
+        	"status":"500",
+        	"error_code":"iam_provisioning_DB_connection_issue"
+        },
+        "iam_provisioning_ECE_connection_issue":{
+        	"status":"500",
+        	"error_code":"iam_provisioning_ECE_connection_issue"
+        },
+        "iam_provisioning_JMS_down":{
+        	"status":"500",
+        	"error_code":"iam_provisioning_JMS_down"
+        }
+    }
 }
