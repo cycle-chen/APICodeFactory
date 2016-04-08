@@ -52,4 +52,6 @@ public class Config {
 		this.importList = Arrays.copyOf(importList, importList.length);
 	}
 
+	public static void main(String[] args) {
+	}
 }

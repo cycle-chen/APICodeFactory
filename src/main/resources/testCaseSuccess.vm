@@ -10,19 +10,13 @@ import $import;
 public class ${className} {
     private final static String URL = "${url}";
     
-#foreach($methodName in $subMap.keySet())
-#set($paramMap = $!subMap.get($methodName))
+#foreach($methodName in $methodMap.keySet())
+#set($paramMap = $!methodMap.get($methodName))
 #if($methodName == "success")
     @Test
 	public void $methodName(){
 	   post(URL, "$methodName").then().log().all().statusCode($!paramMap.get("status"));
 	}
-	
-#else
-    @Test
-    public void $methodName(){
-       post(URL, "$methodName").then().log().all().statusCode($!paramMap.get("status")).body("error",equalTo("$!paramMap.get("error_code")"));
-    }
     
 #end
 #end

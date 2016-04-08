@@ -1,7 +1,7 @@
 {
 	"config":{
 	    "authors":"yaochong.chen",
-	    "packages":"com.ericsson.nsi.iam.v2.pv.ft",
+	    "packages":"com.ericsson.cac.iam.v2.provisioning.ft",
 	    "createDate":"2016-10-11",
 	    "importList":[
 	          "com.ericsson.nsi.iam.v2.test.aa.JdbcTool",
